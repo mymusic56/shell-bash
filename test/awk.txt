@@ -1,0 +1,8 @@
+[root@localhost scripts]# cat a.txt
+1 2 3 4 6 7
+1 2 3 4 6 7
+
+[root@localhost scripts]# cat a.txt |awk -F" " '{print $1" "$2" "$3" "$4+1" "$5" "$6}' > a.txt
+[root@localhost scripts]# cat a.txt
+1 2 3 5 6 7
+1 2 3 5 6 7
